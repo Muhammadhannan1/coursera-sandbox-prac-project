@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer'
+    ;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.15rem;
+    grid-template-rows: auto auto 7fr 1fr;
+    box-sizing: border-box;
+
+}
+.logo{
+    border-radius: 10%;
+    height: 5.3rem;
+    padding-top: 8px;
+}
+header{
+    grid-area: header;
+    background-color:rgb(238 238 238 / 46%);
+    display: flex;
+    justify-content: center;
+    height: 6.5rem;
+}
+nav li {
+    list-style-type: none;
+    text-decoration : none;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    text-decoration:none ;
+    font-size: 1.3rem;
+    
+}
+ul{
+    display: flex;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(0 144 172 / 90%);
+    height: 3.5rem;
+    position: relative;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'section1'
+    'section2'
+    ;
+    grid-gap: 2rem;
+    width: 100%;
+    position: relative;
+    /* top: 5rem; */
+    row-gap: 4rem;
+    background-color: rgb(238 238 238 / 46%);
+}
+#section1{
+
+    width: 98%;
+    position: relative;
+    left: 1%;
+    top: 3.5rem;
+
+
+}
+#section2{
+    grid-area: section2;
+    display: grid;
+    grid-template-areas: 
+    'article1 article2 article3'
+    ;
+    grid-gap: 1rem;
+    grid-template-columns: 4fr 5fr 4fr;
+}
+#article1{
+    grid-area: article1;
+
+    margin-left: 2.1rem ;  
+    height: 90%;
+    box-shadow: 3px 2px 8px 1px rgb(4, 4, 4);
+    position: relative;
+    top: 3%;
+    border-radius: 8px;
+    border: 1px solid black;
+
+}
+#article2{
+    grid-area: article2;
+    height: 90%;
+    margin: auto;  
+}
+#article3{
+    grid-area: article3;
+    margin-right: 2.1rem ; 
+    height: 90%;
+    box-shadow: 3px 2px 8px 1px rgb(4, 4, 4);
+    position: relative;
+    top: 3%; 
+    border-radius: 8px;
+    border: 1px solid black;
+
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    position: relative;
+    background-color: rgb(0 144 172 / 90%);
+    height: 9.1rem;
+    color: white;
+}
+footer>div{
+    padding: 2rem;
+    color: black;
+    
+    
+}
+.logo2{
+    width: 26rem;
+    padding-top: 2rem;
+    padding-left: 0.2rem;
+    position: relative;
+    top: 25%;
+}
+.fside1{
+    position: relative;
+    left: 7%;
+    margin-top: 2rem;
+}
+.fside2{
+    margin-top: 2rem;
+    position: relative;
+    left: 25%;
+    font-size: 1.5rem;
+    padding-top: 3%;
+    text-decoration: underline;
+}
+a:hover{
+    color: white;
+
+}
+.fside1>img{
+height: 3rem;
+width: 35rem;
+}
+.navlogo{
+    height: 2rem;
+    width: 9.8rem;
+    position: relative;
+    left: 1.3%;
+    padding-top: 0.7%;
+}
+#searchbar{
+    position: relative;
+    top: -55%;
+    left: 83%;
+    /* width: 13rem; */
+    /* height: 1.6rem; */
+    
+}
+input[type=search]{
+    background-color: #ffb7b7a8;
+    border: none;
+    outline: none;
+    border-color: rgb(0 144 172 / 90%);
+    border-radius: 10px;
+    /* height: 10rem; */
+    
+}
+h2{
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.Artlogo{
+    height: 14.5rem;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 5px 3px 1px rgb(139, 115, 115);
+}
+article>h1{
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 3rem;
+}
+.text{
+    position: relative;
+    top: 8%;
+    padding-left: 16px;
+}
+input:focus{
+    border-color:rgba(255, 255, 255, 0.9) ;
+    border-style: solid;
+    height: 2rem;
+}
+nav>input{
+    height: 1.9rem;
+    width: 15rem;
+}
